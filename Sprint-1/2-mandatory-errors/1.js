@@ -2,3 +2,10 @@
 
 const age = 33;
 age = age + 1;
+
+// we can use let to declare the variable 
+
+let age = 33;
+age = age + 1;
+
+console.log(age);
