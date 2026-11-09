@@ -25,3 +25,11 @@ console.log(`£${pounds}.${pence}`);
 
 // To begin, we can start with
 // 1. const penceString = "399p": initialises a string variable with the value "399p"
+
+/* ANSWER: 
+3,4,5,6. const penceStringWithoutTrailingP = penceString.substring(  Initialises a string variable and assigns it a substring of pencesString.
+8. const paddedPenceNumberString = penceStringWithoutTrailingP.padStart(3, "0"); it declares a new constant
+9,10,11,12.
+14,15,16.
+18. console.log(`£${pounds}.${pence}`); it prints the amount including euro symbol to the console. 
+*/
