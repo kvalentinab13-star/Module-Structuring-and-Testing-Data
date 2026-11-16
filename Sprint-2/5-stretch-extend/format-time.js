@@ -4,8 +4,14 @@
 
 function formatAs12HourClock(time) {
   const hours = Number(time.slice(0, 2));
+  if (hours === 0) {
+    return `12${time.slice(2)} am`;
+  }
+  if (hours === 12) {
+    return `${time} pm`;
+  }
   if (hours > 12) {
-    return `${hours - 12}:00 pm`;
+    return `${hours - 12}${time.slice(2)} pm`;
   }
   return `${time} am`;
 }
@@ -23,3 +29,9 @@ console.assert(
   currentOutput2 === targetOutput2,
   `current output: ${currentOutput2}, target output: ${targetOutput2}`
 );
+
+console.log(formatAs12HourClock("00:00"));
+console.log(formatAs12HourClock("23:00"));
+console.log(formatAs12HourClock("01:00"));
+console.log(formatAs12HourClock("13:00"));
+console.log(formatAs12HourClock("08:00"));
