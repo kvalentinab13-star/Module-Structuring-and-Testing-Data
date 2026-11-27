@@ -1,4 +1,5 @@
-// trying to create an age variable and then reassign the value by 1
-
-const age = 33;
+// Error: TypeError: Assignment to constant variable.
+// const creates a variable that can't get a new value, so line 4 fails.
+let age = 33;
 age = age + 1;
+console.log(age);
